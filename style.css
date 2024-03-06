@@ -1,0 +1,109 @@
+.navbar-brand {
+    font-weight: bold;
+    color: #f0ad4e !important;
+    /* Customize the brand color */
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, .8);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: rgba(255, 255, 255, .9);
+}
+
+.dropdown-menu {
+    border: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+}
+
+.hero-section {
+    padding: 100px 0;
+    background: #007bff;
+    /* Fallback color */
+    background: linear-gradient(to right, #0062E6, #33AEFF);
+    color: #fff;
+}
+
+.hero-section img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 50px 0;
+    }
+}
+
+#hero {
+    background: url('your-image-url.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+}
+
+.container {
+    max-width: 900px;
+}
+
+.display-4,
+.lead {
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+}
+
+.about-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('path-to-your-background-image.jpg') fixed center center;
+    background-size: cover;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.about-content h2,
+.about-content h3 {
+    color: #f2f2f2;
+}
+
+.about-content p {
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.counters {
+    padding: 20px 0;
+    display: flex;
+}
+
+.counters .col {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.counters .col i {
+    color: #f2f2f2;
+    margin-bottom: 10px;
+}
+
+.count-data {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.about-img img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
