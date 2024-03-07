@@ -1,0 +1,99 @@
+ body {
+     font-family: 'Arial', sans-serif;
+ }
+
+ .faq-header {
+     font-size: 24px;
+     font-weight: 700;
+     margin-bottom: 2rem;
+ }
+
+ .card {
+     margin-bottom: 1rem;
+     border: none;
+     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1);
+ }
+
+ .card-header {
+     background-color: #fff;
+     font-size: 20px;
+     font-weight: 600;
+ }
+
+ .card-header button {
+     color: #007bff;
+     text-align: left;
+     width: 100%;
+     text-decoration: none;
+     padding: 0;
+     border: none;
+     background: none;
+     font-size: inherit;
+     font-weight: inherit;
+ }
+
+ .card-header button:hover {
+     color: #0056b3;
+ }
+
+ .card-header button[aria-expanded="true"] {
+     font-weight: 700;
+ }
+
+ .card-header button:after {
+     float: right;
+     content: '\f078';
+     /* FontAwesome chevron-down */
+     font-family: 'FontAwesome';
+     transition: transform 0.2s ease-in-out;
+ }
+
+ .card-header button[aria-expanded="true"]:after {
+     transform: rotate(180deg);
+ }
+
+ .card-body {
+     font-size: 16px;
+     line-height: 1.5;
+ }
+
+
+ body {
+     font-family: 'Nunito', sans-serif;
+     background-color: #f8f9fa;
+     color: #212529;
+ }
+
+ .contact-section {
+     background-color: #ffffff;
+     border-radius: 8px;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     padding: 40px;
+     margin-top: 50px;
+ }
+
+ .contact-info h3 {
+     font-size: 24px;
+     font-weight: 700;
+     margin-bottom: 15px;
+ }
+
+ .contact-info p {
+     font-size: 18px;
+     line-height: 1.6;
+ }
+
+ .contact-info .social-icons {
+     margin-top: 20px;
+ }
+
+ .contact-info .social-icons a {
+     font-size: 24px;
+     color: #007bff;
+     margin-right: 10px;
+     transition: color 0.3s ease;
+ }
+
+ .contact-info .social-icons a:hover {
+     color: #0056b3;
+ }
