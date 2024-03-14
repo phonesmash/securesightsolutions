@@ -1,244 +1,256 @@
-  body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #121212;
-      /* Dark background for contrast */
-      color: #ffffff;
-  }
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+}
 
-  .navbar {
-      padding: 1rem 2rem;
-      background-color: #333333;
-      /* Dark theme navbar */
-      border-bottom: 2px solid #007bff;
-      /* Accent border color */
-  }
+.navbar-custom {
+    background-color: #004d99;
+    /* Customize the navbar background color */
+}
 
-  .navbar-brand {
-      font-weight: 700;
-      color: #007bff !important;
-      /* Accent color for the brand */
-      font-size: 1.8rem;
-  }
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link {
+    color: #ffffff;
+    /* Customize the navbar text color */
+}
 
-  .nav-link {
-      color: #adb5bd !important;
-      /* Soft white for nav links */
-      margin-right: 1rem;
-      transition: color 0.3s;
-  }
-
-  .nav-link:hover {
-      color: #007bff !important;
-      /* Brighter color on hover */
-  }
-
-  .navbar-toggler {
-      border-color: #007bff;
-      /* Accent color for toggler */
-  }
-
-  .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 123, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  }
-
-  .navbar-collapse {
-      justify-content: flex-end;
-  }
+.navbar-custom .nav-link:hover {
+    color: #cccccc;
+    /* Customize the navbar text hover color */
+}
 
 
-  /* Hero Section */
-  .hero-section {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-      background-image: url('your-background-image-url-here');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
-      /* Dark overlay */
-  }
 
-  .hero-section h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
-      margin-bottom: 20px;
-  }
 
-  .hero-section p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-  }
 
-  .btn-primary {
-      font-size: 1.2rem;
-      padding: 10px 30px;
-      border: none;
-      transition: background-color 0.3s ease-in-out;
-  }
+.btn-custom {
+    background-color: #007bff;
+    /* TechCash primary color */
+    border: none;
+}
 
-  .btn-primary:hover {
-      background-color: #0056b3;
-  }
+.btn-custom:hover {
+    background-color: #0056b3;
+    /* Darker shade on hover */
+}
 
-  /*How it works section */
-  /* How It Works Section Styles */
-  #how-it-works {
-      background-color: #f8f9fa;
-      /* Light background for contrast */
-      padding: 60px 0;
-  }
+/* Hero Section */
+.hero-section {
+    background: url('bg.png') no-repeat center center / cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
 
-  #how-it-works h2 {
-      color: #007bff;
-      /* TechCash primary color */
-      margin-bottom: 30px;
-      font-weight: bold;
-  }
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
 
-  #how-it-works p {
-      color: #6c757d;
-      /* Subtle text color for descriptions */
-  }
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
 
-  .icon-box {
-      padding: 20px;
-      background: #ffffff;
-      /* White background for the icon boxes */
-      border-radius: 8px;
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-      /* Soft shadow for depth */
-      transition: all 0.3s ease-in-out;
-  }
+.hero-text {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
 
-  .icon-box img {
-      margin-bottom: 15px;
-  }
+.btn-hero {
+    font-size: 1.1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
 
-  .icon-box h4 {
-      color: #007bff;
-      /* Matching the primary color for headings */
-      margin-bottom: 15px;
-  }
+.btn-hero:hover,
+.btn-hero:focus {
+    background-color: #0056b3;
+}
 
-  .icon-box p {
-      font-size: 14px;
-      /* Slightly smaller text for concise descriptions */
-      line-height: 1.7;
-  }
 
-  /* Hover effect for icon boxes */
-  .icon-box:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-  }
 
-  @media (max-width: 768px) {
-      .icon-box {
-          margin-bottom: 30px;
-      }
-  }
 
-  /*Contact */
 
-  #lux-contact-info {
-      background-color: #fff;
-      color: #333;
-      padding: 80px 0;
-  }
+/*How it works section */
+/* How It Works Section Styles */
+#how-it-works {
+    background-color: #f8f9fa;
+    /* Light background for contrast */
+    padding: 60px 0;
+}
 
-  #lux-contact-info h2 {
-      color: #007bff;
-      font-weight: 700;
-      margin-bottom: 15px;
-  }
+#how-it-works h2 {
+    color: #007bff;
+    /* TechCash primary color */
+    margin-bottom: 30px;
+    font-weight: bold;
+}
 
-  #lux-contact-info p.text-muted {
-      margin-bottom: 50px;
-  }
+#how-it-works p {
+    color: #6c757d;
+    /* Subtle text color for descriptions */
+}
 
-  .icon-container i {
-      font-size: 2rem;
-      color: #007bff;
-  }
+.icon-box {
+    padding: 20px;
+    background: #ffffff;
+    /* White background for the icon boxes */
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for depth */
+    transition: all 0.3s ease-in-out;
+}
 
-  #lux-contact-info h6 {
-      font-size: 0.85rem;
-      letter-spacing: 1px;
-      color: #6c757d;
-      margin-bottom: 15px;
-  }
+.icon-box img {
+    margin-bottom: 15px;
+}
 
-  #lux-contact-info p {
-      font-size: 1rem;
-  }
+.icon-box h4 {
+    color: #007bff;
+    /* Matching the primary color for headings */
+    margin-bottom: 15px;
+}
 
-  #lux-contact-info a {
-      color: #333;
-      transition: color 0.3s ease;
-  }
+.icon-box p {
+    font-size: 14px;
+    /* Slightly smaller text for concise descriptions */
+    line-height: 1.7;
+}
 
-  #lux-contact-info a:hover {
-      color: #007bff;
-  }
+/* Hover effect for icon boxes */
+.icon-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
 
-  #lux-contact-info .col-md-3 {
-      transition: transform 0.3s ease;
-  }
+@media (max-width: 768px) {
+    .icon-box {
+        margin-bottom: 30px;
+    }
+}
 
-  #lux-contact-info .col-md-3:hover {
-      transform: translateY(-10px);
-  }
+/*Contact */
 
-  /* Footer */
+#lux-contact-info {
+    background-color: #fff;
+    color: #333;
+    padding: 80px 0;
+}
 
-  footer {
-      background-color: #343a40;
-      padding-top: 10px;
-      color: white;
-  }
+#lux-contact-info h2 {
+    color: #007bff;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
 
-  footer a.text-white:hover {
-      color: #ffc107;
-      text-decoration: none;
-  }
+#lux-contact-info p.text-muted {
+    margin-bottom: 50px;
+}
 
-  h5.text-uppercase {
-      margin-bottom: 25px;
-      font-weight: bold;
-  }
+.icon-container i {
+    font-size: 2rem;
+    color: #007bff;
+}
 
-  footer p,
-  footer h5 {
-      color: #adb5bd;
-  }
+#lux-contact-info h6 {
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    color: #6c757d;
+    margin-bottom: 15px;
+}
 
-  .list-inline-item {
-      padding: 0 10px;
-  }
+#lux-contact-info p {
+    font-size: 1rem;
+}
 
-  .list-inline-item a {
-      color: white;
-      transition: color 0.2s ease-in-out;
-  }
+#lux-contact-info a {
+    color: #333;
+    transition: color 0.3s ease;
+}
 
-  .list-inline-item a:hover {
-      color: #ffc107;
-  }
+#lux-contact-info a:hover {
+    color: #007bff;
+}
 
-  .text-warning {
-      color: #ffc107 !important;
-  }
+#lux-contact-info .col-md-3 {
+    transition: transform 0.3s ease;
+}
 
-  @media (max-width: 767px) {
+#lux-contact-info .col-md-3:hover {
+    transform: translateY(-10px);
+}
 
-      .text-left,
-      .text-md-left {
-          text-align: center;
-      }
-  }
+/* Footer */
+
+footer {
+    background-color: #343a40;
+    padding-top: 10px;
+    color: white;
+}
+
+footer a.text-white:hover {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+h5.text-uppercase {
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+footer p,
+footer h5 {
+    color: #adb5bd;
+}
+
+.list-inline-item {
+    padding: 0 10px;
+}
+
+.list-inline-item a {
+    color: white;
+    transition: color 0.2s ease-in-out;
+}
+
+.list-inline-item a:hover {
+    color: #ffc107;
+}
+
+.text-warning {
+    color: #ffc107 !important;
+}
+
+@media (max-width: 767px) {
+
+    .text-left,
+    .text-md-left {
+        text-align: center;
+    }
+}
+
+/* About Us */
+
+.img-fluid {
+    border-radius: 50px;
+}
+
+.as {
+    color: black;
+}
